@@ -1,10 +1,11 @@
 
-import { useKjFetchGifs } from '../KjHooks/useKjFetchGifs .js'
-import { Kj086GifCardItem } from './Kj086GifCardItem.jsx'
+import { useKj087FetchGifs } from '../KjHooks/useKj087FetchGifs.js'
+//import { Kj086GifCardItem } from './Kj086GifCardItem.jsx'
+import { Kj102GifCardItem } from './Kj102GifCardItem.jsx'
 
 export const Kj088GifGrid = ({ kjPropCategoria }) => {
 
-  const { kjImagenesData, kjIsLoading } = useKjFetchGifs (kjPropCategoria);
+  const { kjImagenesData, kjIsLoading } = useKj087FetchGifs (kjPropCategoria);
   
   return (
     <>
@@ -16,7 +17,7 @@ export const Kj088GifGrid = ({ kjPropCategoria }) => {
 
         <div className = "kjCard-grid" >
             { kjImagenesData.map( (kjImagenData) => (
-                  <Kj086GifCardItem 
+                  <Kj102GifCardItem 
                     key ={kjImagenData.kjId}
                     { ...kjImagenData }
                   />

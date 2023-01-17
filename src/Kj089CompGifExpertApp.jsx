@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react';
 
-import { Kj079InputAddCategory, Kj088GifGrid } from './KjComponentes'
+import { Kj106InputAddCategory, Kj108GifGrid } from './KjComponentes'  //ojo index.js
+
 
 export const Kj089CompGifExpertApp = () => {
 
@@ -17,14 +18,18 @@ export const Kj089CompGifExpertApp = () => {
   
       <h1>Kj Titulo GifExpertApp</h1>
    
-      <Kj079InputAddCategory 
+      <Kj106InputAddCategory 
           kjPropFuncOnNewCategory = { (kjValor1) => kjOnAgregarCategoria(kjValor1)}
       />
-    
+      {
+        //le estoy diciendo: "cuando lo tengas el nuevo valor, yo te doy la función para que
+        // lo actualices"
+      }    
+
       {
         kjArrCategoriasInput.map( ( kjCategoria ) =>
             (
-              <Kj088GifGrid 
+              <Kj108GifGrid 
                   key= { kjCategoria } 
                   kjPropCategoria = { kjCategoria } 
               />

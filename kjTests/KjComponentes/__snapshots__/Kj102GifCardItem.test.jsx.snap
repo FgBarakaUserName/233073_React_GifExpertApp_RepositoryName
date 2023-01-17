@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`de kjxxxGifCardItem  kj102 A. debe de hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="kjCardItem"
+  >
+    <img
+      alt="kj mi mama"
+      src="https://media1.giphy.com/media/fwePpV0h0KKCjEaXWK/giphy-downsized-medium.gif?cid=c3a7f59cv7ny06c967zom367fknailgeywld0gr0mfv9as44&rid=giphy-downsized-medium.gif&ct=g"
+    />
+    <p>
+      kj mi mama
+    </p>
+  </div>
+</div>
+`;

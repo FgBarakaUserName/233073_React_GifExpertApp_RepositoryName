@@ -2,7 +2,7 @@
 import { useState, useEffect  } from "react";
 import { Kj082GetGifsFromWeb } from "../KjHelpers/Kj082GetGifsFromWeb";
 
-export const useKjFetchGifs  = (kjCategoria) => {
+export const useKj087FetchGifs  = (kjCategoria) => {
 
     const [kjImagenesData, setKjImagenesData] = useState([])
 
